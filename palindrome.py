@@ -1,4 +1,5 @@
 def palindrome(s):
+#value of palin
     palindrome = input[::-1]
     return palindrome
 
