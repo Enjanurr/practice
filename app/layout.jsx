@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
         <ThemeProvider attribute="class" defaultTheme="light">
           {/*The header and the footer don't change even if the section is change that's why is here */}
           <Header /> {/*From the header.jsx */}
+
           {children} {/* The children is in the page.jsx  */}
+          
           <Footer /> {/* From the footer.jsx */}
         </ThemeProvider>
       </body>

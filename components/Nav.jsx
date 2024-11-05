@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation'; // for navigation through pages
 import { motion } from 'framer-motion';
 
 const links = [
-  { path: '/services', name: 'Services' },
+  { path: '/', name: 'Home' },
   { path: '/projects', name: 'Projects' }, // Projects is the name of the function in projects/page.jsx
   { path: '/contact', name: 'Contact' },
 ];

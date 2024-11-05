@@ -6,7 +6,6 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { Description } from '@radix-ui/react-dialog';
 
 const servicesData = [
   {
@@ -17,7 +16,7 @@ const servicesData = [
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
-    title: 'Web Devlopment',
+    title: 'Web Development',
     description:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis animiex rem veniam sit officia quas est? Vitae molestiae placeat, sit cumqueratione quibusdam quod dignissimos, iste perferendis quaerat maiores!',
   },
@@ -36,11 +35,12 @@ const Services = () => {
         <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
           My Services
         </h2>
-        <div className="grid xl:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+        {/* Responsive grid layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
           {servicesData.map((item, index) => {
             return (
               <Card
-                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                className="w-full max-w-[424px] min-h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative mx-auto"
                 key={index}
               >
                 <CardHeader className="text-primary absolute -top-[60px]">

@@ -17,7 +17,7 @@ import Socials from './Socials';
 // This entire content here is for the section
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28">
+    <section className="py-12 xl:py-24 pt-20 md:pt-28 ">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/**Text here */}

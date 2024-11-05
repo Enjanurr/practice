@@ -39,7 +39,7 @@ const infoData = [
   },
 ];
 
-const qualificationData = [
+const qualificationData = [ 
   {
     title: 'Education',
     data: [
